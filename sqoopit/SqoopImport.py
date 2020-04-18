@@ -14,18 +14,19 @@ class Sqoop(object):
     oracle_partition=None
     verbose_operations=False
 
-    def __init__(self, fs=None,create=None, hive_drop_import_delims=None,fields_terminated_by=None,
-                 input_escaped_by=None, enclosed_by=None, escaped_by=None, null_string=None,
-                 null_non_string=None, table=None, target_dir=None, delete_target_dir=None, connect=None,
-                 username=None, password=None, map_colmn_java=None, help=None, query=None, incremental=None,
-                 check_column=None, last_value=None, connection_manager=None, connection_param_file=None, driver=None,
-                 hadoop_home=None, hadoop_mapred_home=None, metadata_transaction_isolation_level=None, password_alias=None,
-                 password_file=None, relaxed_isolation=None, skip_dist_cache=None, temporary_root_dir=None, verbose=None,
-                 num_mappers=None, bindir=None, direct=None, parquetfile=None, split_by=None, hive_partition_key=None,
-                 hive_partition_value=None , hive_import=None, as_textfile=None, hive_delims_replacement=None, hive_table=None,
-                 hive_overwrite=None, warehouse_dir=None, oracle_partition=None, columns=None,
-                 hbase_table=None, column_family=None, hbase_row_key=None, m=None, verbose_operations=False
-                 ):
+    def __init__(
+            self, fs=None,create=None, hive_drop_import_delims=None,fields_terminated_by=None,
+            input_escaped_by=None, enclosed_by=None, escaped_by=None, null_string=None,
+            null_non_string=None, table=None, target_dir=None, delete_target_dir=None, connect=None,
+            username=None, password=None, map_colmn_java=None, help=None, query=None, incremental=None,
+            check_column=None, last_value=None, connection_manager=None, connection_param_file=None, driver=None,
+            hadoop_home=None, hadoop_mapred_home=None, metadata_transaction_isolation_level=None, password_alias=None,
+            password_file=None, relaxed_isolation=None, skip_dist_cache=None, temporary_root_dir=None, verbose=None,
+            num_mappers=None, bindir=None, direct=None, parquetfile=None, split_by=None, hive_partition_key=None,
+            hive_partition_value=None , hive_import=None, as_textfile=None, hive_delims_replacement=None, hive_table=None,
+            hive_overwrite=None, warehouse_dir=None, oracle_partition=None, columns=None,
+            hbase_table=None, column_family=None, hbase_row_key=None, hbase_create_table=None, m=None, verbose_operations=False
+        ):
         self.verbose_operations=verbose_operations
         
         self._properties['-fs'] = fs
@@ -73,6 +74,7 @@ class Sqoop(object):
         self._properties['--hbase-table'] = hbase_table
         self._properties['--column-family'] = column_family
         self._properties['--hbase-row-key'] = hbase_row_key
+        self._properties['--hbase-create-table'] = hbase_create_table
         self._properties['-m'] = m
         
         self._command = None
