@@ -1,21 +1,20 @@
-# pyhdfs
+# sqoop-it
 A python package that lets you sqoop into HDFS/Hive/HBase data from RDBMS using sqoop.
 
-[![PyPI](https://img.shields.io/badge/pip-v.0.0.12-blue.svg)](https://pypi.org/project/pysqoop)
+[![PyPI](https://img.shields.io/badge/pip-v.20.0.1-blue.svg)](https://github.com/marco-gallegos/sqoopit)
 ![Python](https://img.shields.io/badge/python-3.5+,2.7-green.svg)
-[![Tests](https://img.shields.io/badge/tests-6%20%2F%206-brightgreen.svg)](https://github.com/lucafon/pysqoop/blob/master/unittests/unintary_tests.py)
 [![MIT license](http://img.shields.io/badge/license-MIT-orange.svg)](http://opensource.org/licenses/MIT)
 
 To install the package via pip, run 
 
 `
-pip install pyhdfs
+pip install sqoopit
 `
 
 You can then use the package using
 
 ```python
-from pyhdfs.SqoopImport import Sqoop 
+from sqoopit.SqoopImport import Sqoop 
 sqoop = Sqoop(help=True)
 code = sqoop.perform_import()
 ```
@@ -95,9 +94,12 @@ sqoop.perform_import()
 ### Doing
 
 * handle sqoop jobs
+* more tests coverage
 
 
 ### TODOs
 
 * add missing parameters
-* more tests coverage
+
+
+Original Idea By [Luca Fontanili](https://github.com/lucafon/pysqoop)

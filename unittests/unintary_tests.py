@@ -5,7 +5,7 @@ Date: 2020/02/03
 Description: testing on the installed version of pyhdfs
 '''
 import unittest
-from pyhdfs.SqoopImport import Sqoop
+from sqoopit.SqoopImport import Sqoop
 
 
 class TestStringMethods(unittest.TestCase):
