@@ -1,17 +1,24 @@
+# -*- coding: utf-8 -*-
+'''
+Author: Marco A. Gallegos
+Date: 2020/02/03
+Description:
+this archive describes the package metadata for pypi
+'''
 import setuptools
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pysqoop",
+    name="pyhdfs",
     version="0.0.12",
-    author="Luca Fontanili",
-    author_email="luca.fontanili93@gmail.com",
+    author="Marco A. Gallegos",
+    author_email="ma_galeza@hotmail.com",
     description="A simple package to let you Sqoop into HDFS/Hive/HBase with python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/lucafon/pysqoop",
+    url="https://github.com/marco-gallegos/pyhdfs",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
