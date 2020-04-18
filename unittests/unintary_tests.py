@@ -2,7 +2,7 @@
 '''
 Author: Marco A. Gallegos
 Date: 2020/02/03
-Description: testing on the installed version of pyhdfs
+Description: testing on the installed version of sqoopit
 '''
 import unittest
 from sqoopit.SqoopImport import Sqoop
