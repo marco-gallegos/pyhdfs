@@ -2,7 +2,7 @@
 '''
 Author: Marco A. Gallegos
 Date: 2020/02/03
-Description: testing on the installed version of sqoopit
+Description: testing on the local/development version of sqoopit witout installing
 '''
 import unittest
 from sqoopit.SqoopImport import Sqoop
